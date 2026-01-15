@@ -1,0 +1,45 @@
+\documentclass[12pt, a4paper]{article}
+
+% thêm thư viện
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath} % thư viện toán
+\usepackage{graphicx} % chèn hình ảnh
+\usepackage{geometry}
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+
+% Bắt đầu viết Paper (Bài tập 2)
+\title {Bài tập 2: Toán Basic}
+\author{Phạm Huỳnh Quý An}
+\date {\today}
+
+\begin{document}
+
+\maketitle
+
+\section {Công thức chính AI Engineer}
+
+\subsection{Hàm mất mát (Loss Function)}
+Công thức Mean Square Error (MSE) thường dùng trong Regression:
+% Phân số: \frac{Tử}{Mẫu}; Tổng là \sum
+$$ \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y}_i)^2$$
+
+\subsection{Ma Trận trọng số}
+% Dùng bmatrix để viết ma trận
+$$
+I = \begin{bmatrix}
+1 & 0    \\% '&' để ngăn cách cột
+0 & 1
+\end{bmatrix}
+$$
+
+\subsection{Biểu đồ Loss Function}
+Hình minh họa Loss qua các Epochs
+% Upload hình
+\begin{figure}[h] % 'h' đặt ngay tại đây
+    \centering
+    \includegraphics[width=0.7\linewidth]{BaiTap2/Loss_Accuracy.png}
+    \caption{Loss Function}
+\end{figure}
+
+\end{document}
