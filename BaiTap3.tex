@@ -1,0 +1,41 @@
+% Bài tập về References
+
+\documentclass[12pt, a4paper]{article}
+
+% Thư viện
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{bottom=2cm, top=2cm, left=2cm, right=2cm}
+\usepackage{cite}
+
+% Tiêu đề
+\title{Bài tập số 3: References}
+\author{Phạm Huỳnh Quý An}
+\date{\today}
+
+% Bắt đầu viết bài
+\begin{document}
+
+\maketitle
+
+\section {Tổng quan nghiên cứu (Literature Review)}
+Trong những năm gần đây, việc ứng dụng GAN vào y tế đã và đang phát triển rất mạnh:
+
+\begin{itemize}
+    \item Năm 2020, Gupta và cộng sự đã đề xuất sử dụng GAN cho bài toán siêu phân giải ảnh y tế, đặt nền móng cho các nghiên cứu sau này \cite{gupta2020super}
+
+    \item Đến năm 2022, một kiến trúc mạng sinh đối nghịch GAN mới đã được Ahmad giới thiệu nhằm cải thiện độ chi tiết của ảnh \cite{ahmad2022new}
+
+    \item Năm 2023, xu hướng kết hợp giữa Transformer và GAN đã được Du và Tian thực hiện, cho thấy hiệu suất vượt trội \cite{du2023transformer}
+\end{itemize}
+
+% In danh sách các tài liệu
+\newpage % Sang trang mới
+\renewcommand\refname{Tài liệu tham khảo} % Đổi References sang tiếng việt
+\bibliographystyle{ieeetr}  %Kiểu trích dẫn IEEE
+\bibliography{BaiTap3/references}
+
+\end{document}
